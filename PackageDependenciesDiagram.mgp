@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PackageAnalysis>
+    <Package name="creator" x="168" y="154">
+        <DependencyLink destination="product"/>
+    </Package>
+    <Package name="creatorConcrete" x="145" y="369">
+        <DependencyLink destination="product"/>
+        <DependencyLink destination="productConcrete"/>
+        <DependencyLink destination="creator"/>
+    </Package>
+    <Package name="product" x="428" y="154"/>
+    <Package name="productConcrete" x="405" y="370">
+        <DependencyLink destination="product"/>
+    </Package>
+    <Package name="testClient" x="27" y="68">
+        <DependencyLink destination="product"/>
+        <DependencyLink destination="creatorConcrete"/>
+        <DependencyLink destination="creator"/>
+    </Package>
+</PackageAnalysis>
